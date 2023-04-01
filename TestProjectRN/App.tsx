@@ -122,7 +122,7 @@ export default App;
  */
 
 import React from 'react';
-import {Image, ScrollView, Text} from 'react-native';
+import {Image, ScrollView, Text, TextInput, View} from 'react-native';
 
 const logo = {
   uri: 'https://reactnative.dev/img/tiny_logo.png',
@@ -131,38 +131,43 @@ const logo = {
 };
 
 const App = () => (
+
   <ScrollView>
-    <Text style={{fontSize: 96}}>Scroll me plz</Text>
+    <TextInput placeholder="Type here to translate!"></TextInput>
+    <TextInput placeholder="Type here"></TextInput>
+
+    <Text style={{fontSize: 40}}>Scroll me plz</Text>
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
-    <Text style={{fontSize: 96}}>If you like</Text>
+    <Text style={{fontSize: 40}}>If you like</Text>
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
-    <Text style={{fontSize: 96}}>Scrolling down</Text>
+    <Text style={{fontSize: 40}}>Scrolling down</Text>
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
-    <Text style={{fontSize: 96}}>What's the best</Text>
+    <Text style={{fontSize: 40}}>What's the best</Text>
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
-    <Text style={{fontSize: 96}}>Framework around?</Text>
+    <Text style={{fontSize: 40}}>Framework around?</Text>
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
-    <Text style={{fontSize: 80}}>React Native</Text>
+    <Text style={{fontSize: 40}}>React Native</Text>
+    
   </ScrollView>
 );
 
